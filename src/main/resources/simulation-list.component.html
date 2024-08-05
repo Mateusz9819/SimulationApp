@@ -1,0 +1,6 @@
+<h2>Simulation List</h2>
+<ul>
+    <li *ngFor="let simulation of simulations">
+        <a [routerLink]="['/simulations', simulation.id]">{{ simulation.name }}</a>
+    </li>
+</ul>
